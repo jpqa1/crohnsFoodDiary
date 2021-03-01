@@ -1,0 +1,70 @@
+package com.bae.crohnsFoodDiary.domain;
+
+public class Food {
+
+	private int id;
+	private String name;
+	private String type;
+	private double caloriesPerPortion;
+	private String effect;
+
+	public Food(int id, String name, String type, double caloriesPerPortion, String effect) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.type = type;
+		this.caloriesPerPortion = caloriesPerPortion;
+		this.effect = effect;
+	}
+
+	public Food() {
+		super();
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public double getCaloriesPerPortion() {
+		return caloriesPerPortion;
+	}
+
+	public void setCaloriesPerPortion(double caloriesPerPortion) {
+		this.caloriesPerPortion = caloriesPerPortion;
+	}
+
+	public String getEffect() {
+		return effect;
+	}
+
+	public void setEffect(String effect) {
+		this.effect = effect;
+	}
+
+	@Override
+	public String toString() {
+		return "Food [id=" + id + ", name=" + name + ", type=" + type + ", caloriesPerPortion=" + caloriesPerPortion
+				+ ", effect=" + effect + "]";
+	}
+
+}
