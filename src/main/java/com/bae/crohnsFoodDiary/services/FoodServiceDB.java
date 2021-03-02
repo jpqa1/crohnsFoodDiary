@@ -19,19 +19,19 @@ public class FoodServiceDB implements FoodService {
 	}
 
 	@Override
-	public Food getFood(int id) {
+	public Food getFood(Long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Food removeFood(int id) {
+	public Food removeFood(Long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Food updateFood(int id, Food food) {
+	public Food updateFood(Long id, Food food) {
 		// TODO Auto-generated method stub
 		return null;
 	}

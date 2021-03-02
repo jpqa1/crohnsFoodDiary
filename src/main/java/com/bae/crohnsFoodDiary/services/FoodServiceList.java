@@ -21,8 +21,8 @@ public class FoodServiceList implements FoodService {
 	}
 
 	@Override
-	public Food removeFood(int id) {
-		return this.foodList.remove(id);
+	public Food removeFood(Long id) {
+		return this.foodList.remove(id.intValue());
 	}
 
 	@Override
@@ -31,12 +31,12 @@ public class FoodServiceList implements FoodService {
 	}
 
 	@Override
-	public Food getFood(int id) {
-		return this.foodList.get(id);
+	public Food getFood(Long id) {
+		return this.foodList.get(id.intValue());
 	}
 
 	@Override
-	public Food updateFood(int id, Food food) {
+	public Food updateFood(Long id, Food food) {
 		Food foodToUpdate = getFood(id);
 		foodToUpdate.setName(food.getName());
 		foodToUpdate.setType(food.getType());
