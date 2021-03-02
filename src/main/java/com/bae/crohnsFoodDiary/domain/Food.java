@@ -2,13 +2,13 @@ package com.bae.crohnsFoodDiary.domain;
 
 public class Food {
 
-	private int id;
+	private Long id;
 	private String name;
 	private String type;
 	private double caloriesPerPortion;
 	private String effect;
 
-	public Food(int id, String name, String type, double caloriesPerPortion, String effect) {
+	public Food(Long id, String name, String type, double caloriesPerPortion, String effect) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -21,11 +21,11 @@ public class Food {
 		super();
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

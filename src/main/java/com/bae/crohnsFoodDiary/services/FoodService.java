@@ -14,12 +14,12 @@ public interface FoodService {
 
 	// View a Particular food item by passing ID
 	// Used to Update Food Item
-	Food getFood(int id);
+	Food getFood(Long id);
 
 	// Delete a Food Item
-	Food removeFood(int id);
+	Food removeFood(Long id);
 
 	// Update a Food Item
-	Food updateFood(int id, Food food);
+	Food updateFood(Long id, Food food);
 
 }
