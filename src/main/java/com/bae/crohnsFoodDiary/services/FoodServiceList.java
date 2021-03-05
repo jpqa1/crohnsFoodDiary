@@ -21,8 +21,9 @@ public class FoodServiceList implements FoodService {
 	}
 
 	@Override
-	public Food removeFood(Long id) {
-		return this.foodList.remove(id.intValue());
+	public boolean removeFood(Long id) {
+		Food foodToRemove = this.getFood(id);
+		return this.foodList.remove(foodToRemove);
 	}
 
 	@Override

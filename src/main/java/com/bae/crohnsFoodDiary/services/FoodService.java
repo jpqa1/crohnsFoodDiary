@@ -17,7 +17,7 @@ public interface FoodService {
 	Food getFood(Long id);
 
 	// Delete a Food Item
-	Food removeFood(Long id);
+	boolean removeFood(Long id);
 
 	// Update a Food Item
 	Food updateFood(Long id, Food food);

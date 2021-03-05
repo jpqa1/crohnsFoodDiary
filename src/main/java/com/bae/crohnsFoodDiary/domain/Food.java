@@ -27,7 +27,7 @@ public class Food {
 	}
 
 	public Food() {
-		super();
+
 	}
 
 	public Long getId() {
