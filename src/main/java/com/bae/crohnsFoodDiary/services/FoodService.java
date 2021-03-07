@@ -22,4 +22,7 @@ public interface FoodService {
 	// Update a Food Item
 	Food updateFood(Long id, Food food);
 
+	// View all foods that have a positive effect.
+	List<Food> getFoodsWhereEffectPositive();
+
 }
