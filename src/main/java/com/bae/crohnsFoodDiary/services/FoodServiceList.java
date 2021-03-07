@@ -47,4 +47,10 @@ public class FoodServiceList implements FoodService {
 
 	}
 
+	@Override
+	public List<Food> getFoodsWhereEffectPositive() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

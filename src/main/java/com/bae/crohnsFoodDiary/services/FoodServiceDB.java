@@ -61,4 +61,9 @@ public class FoodServiceDB implements FoodService {
 		return updatedFood;
 	}
 
+	@Override
+	public List<Food> getFoodsWhereEffectPositive() {
+		return this.foodRepo.getFoodsWhereEffectPositive();
+	}
+
 }

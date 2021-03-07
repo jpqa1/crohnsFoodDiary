@@ -60,4 +60,9 @@ public class FoodController {
 		return this.foodService.removeFood(id);
 	}
 
+	@GetMapping("/getPositiveFood")
+	public List<Food> getPositiveFood() {
+		return this.foodService.getFoodsWhereEffectPositive();
+	}
+
 }
