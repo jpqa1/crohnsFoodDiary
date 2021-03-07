@@ -50,13 +50,15 @@ public class FoodServiceDB implements FoodService {
 	}
 
 	@Override
-	public Food updateFood(Long id, Food food) {
+	public Food updateFood(Long id, Food newFood) {
 		Food existing = this.getFood(id);
-		existing.setName(food.getName());
-		existing.setType(food.getType());
-		existing.setCaloriesPerPortion(food.getCaloriesPerPortion());
-		existing.setEffect(food.getEffect());
-		return existing;
+		existing.setName(newFood.getName());
+		existing.setType(newFood.getType());
+		existing.setCaloriesPerPortion(newFood.getCaloriesPerPortion());
+		existing.setEffect(newFood.getEffect());
+
+		Food updatedFood = this.foodRepo.save(existing);
+		return updatedFood;
 	}
 
 }
