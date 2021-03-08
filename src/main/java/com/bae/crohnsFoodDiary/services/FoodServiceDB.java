@@ -1,5 +1,6 @@
 package com.bae.crohnsFoodDiary.services;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -66,4 +67,15 @@ public class FoodServiceDB implements FoodService {
 		return this.foodRepo.getFoodsWhereEffectPositive();
 	}
 
+	@Override
+	public List<Food> getFoodsWhereEffectNegative() {
+		List<Food> allFood = this.foodRepo.findAll();
+		List<Food> negativeFood = new ArrayList<Food>();
+		for (Food food : allFood) {
+			if (food.getEffect().toLowerCase().contains("negative")) {
+				negativeFood.add(food);
+			}
+		}
+		return negativeFood;
+	}
 }

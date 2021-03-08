@@ -25,4 +25,7 @@ public interface FoodService {
 	// View all foods that have a positive effect.
 	List<Food> getFoodsWhereEffectPositive();
 
+	// View all foods that have a negative effect.
+	List<Food> getFoodsWhereEffectNegative();
+
 }
