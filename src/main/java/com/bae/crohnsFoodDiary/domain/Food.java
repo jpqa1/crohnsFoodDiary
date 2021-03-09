@@ -26,6 +26,14 @@ public class Food {
 		this.effect = effect;
 	}
 
+	public Food(String name, String type, double caloriesPerPortion, String effect) {
+		super();
+		this.name = name;
+		this.type = type;
+		this.caloriesPerPortion = caloriesPerPortion;
+		this.effect = effect;
+	}
+
 	public Food() {
 
 	}

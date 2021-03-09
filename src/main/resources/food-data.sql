@@ -1,0 +1,2 @@
+INSERT INTO food (name, type, calories_per_portion, effect) VALUES ('Spinach', 'Vegetable', 10, 'Positive');
+INSERT INTO food (name, type, calories_per_portion, effect) VALUES ('Chillies', 'Vegetable', 10, 'Negative');

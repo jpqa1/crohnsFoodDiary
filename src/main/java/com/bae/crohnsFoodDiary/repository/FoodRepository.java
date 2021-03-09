@@ -14,6 +14,4 @@ public interface FoodRepository extends JpaRepository<Food, Long> {
 	@Query(value = "SELECT * FROM food WHERE effect LIKE '%Positive%'", nativeQuery = true)
 	List<Food> getFoodsWhereEffectPositive();
 
-	// List<Food> getFoodsWhereEffectNegative();
-
 }
