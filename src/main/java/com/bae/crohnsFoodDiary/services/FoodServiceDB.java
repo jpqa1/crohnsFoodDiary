@@ -45,8 +45,7 @@ public class FoodServiceDB implements FoodService {
 
 	@Override
 	public boolean removeFood(Long id) {
-		Food food = this.getFood(id);
-		this.foodRepo.delete(food);
+		this.foodRepo.deleteById(id);
 		return this.foodRepo.existsById(id);
 	}
 
