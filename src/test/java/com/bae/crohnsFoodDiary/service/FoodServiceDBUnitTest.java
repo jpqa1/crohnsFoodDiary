@@ -10,12 +10,14 @@ import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.ActiveProfiles;
 
 import com.bae.crohnsFoodDiary.domain.Food;
 import com.bae.crohnsFoodDiary.repository.FoodRepository;
 import com.bae.crohnsFoodDiary.services.FoodServiceDB;
 
 @SpringBootTest
+@ActiveProfiles("test")
 public class FoodServiceDBUnitTest {
 
 	@Autowired // load from the context
