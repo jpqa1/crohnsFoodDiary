@@ -70,7 +70,7 @@ A screenshot of my final front-end can be seen below:
 ## Testing
 The total test coverage of my back end came to ?????% as shown in the screenshot below.
 
-![coverage]()
+![coverage](https://imgur.com/MQMRKyw)
 
 ## Stretch Goals
 Further improvements would consist of:
