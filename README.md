@@ -65,12 +65,15 @@ A screenshot of my final front-end can be seen below:
 
 ![front-end](https://i.imgur.com/ad6xfvt.png)
 ![front-end](https://i.imgur.com/hj1xByk.png)
+
+A screenshot of my final front end update modal can be seen below:
+
 ![front-end](https://i.imgur.com/EbYjJtB.png)
 
 ## Testing
-The total test coverage of my back end came to ?????% as shown in the screenshot below.
+The total test coverage of my back end came to 99.2% as shown in the screenshot below.
 
-![coverage](https://imgur.com/MQMRKyw)
+![coverage](https://i.imgur.com/MQMRKyw.png)
 
 ## Stretch Goals
 Further improvements would consist of:
