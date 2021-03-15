@@ -169,8 +169,11 @@ function renderFood(food) {
 //Delete Food
 function deleteFood(id) {
     axios.delete(contextPath + "/removeFood/" + id)
-        .then(() => getFoods())
-        .catch(err => console.error(err))
+        .then(() => {
+        getFoods();
+        getPositiveFoods();
+        getNegativeFoods();
+        }).catch(err => console.error(err));
 }
 
 
@@ -190,6 +193,8 @@ document.getElementById("foodUpdateForm").addEventListener('submit', function (e
         this.reset();
         myModal.toggle();
         getFoods();
+        getPositiveFoods();
+        getNegativeFoods();
     }).catch(err => console.error(err));
 });
 
