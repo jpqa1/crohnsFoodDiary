@@ -11,10 +11,10 @@ This is the README for my
 3. Kanban Board
 4. Database Structure
 5. Data Stack
-6. Testing
-7. Front-end
-8. Stretch Goals
-9. Author
+6. Front-end
+7. Testing
+9. Stretch Goals
+10. Author
 
 ## Resources
 
